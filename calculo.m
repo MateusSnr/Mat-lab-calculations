@@ -1,0 +1,18 @@
+%cálculo concentração geométrica
+clc;
+disp('Cáculo da concentração geométrica');disp(' ');
+disp('Dados fornecidos:');disp(' ');
+fprintf('Cobertura da fração: %10.6f \n',f);
+fprintf('Diâmetro: %10.6f \n',d);
+fprintf('Comprimento: %10.6f \n',h);
+fprintf('Ângulo inicial: %10.6f \n',ai);
+fprintf('Ângulo final: %10.6f \n',af);
+a = af-ai;
+fprintf('Variação do ângulo: %10.6f \n',a);
+calcsup=pi*(h/cos(a))^2*f;
+calcinf=0.5*pi*d^2*(1+sin(a)-0.5*cos(a));
+concentracao = calcsup/calcinf;
+fprintf('Concentração geométrica da recolha de energia solar = %10.6f \n',concentracao);
+pause(5);
+menu;
+

@@ -1,0 +1,10 @@
+%tabela
+
+disp('Tabela');disp('');
+disp('ÂNGULO\tCONCENTRAÇÃO');disp(' ');
+
+passo = (af-ai)/9;
+
+for a=ai:p:af
+    calcsup = 
+end
